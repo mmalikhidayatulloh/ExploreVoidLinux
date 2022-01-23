@@ -165,3 +165,21 @@ $ sudo xbps-install ffmpegthumbs
 $ sudo xbps-install -S pulseaudio alsa-plugins-pulseaudio
 $ sudo ln -s /etc/sv/pulseaudio/ /var/service
 ```
+# vpsm
+```
+$ sudo xbps-install vpsm
+$ git clone https://github.com/void-linux/void-packages.git
+```
+```
+$ vim .bashrc
+```
+```
+export XBPS_DISTDIR=/home/malik/Packages/void-packages
+```
+```
+$ vpsm -i 
+$ vpsm ss
+$ vpsm un
+$ vpsm upr
+$ vpsm bu
+```
