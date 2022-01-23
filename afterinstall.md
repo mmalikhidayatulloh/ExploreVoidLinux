@@ -160,13 +160,8 @@ nmtui
 ```
 $ sudo xbps-install ffmpegthumbs
 ```
-# Pipewire
+# Audio
 ```
-$ sudo xbps-install pipewire pulseaudio-utils
-```
-add to `.xinitrc`
-```
-pipewire &
-pipewire-media-session &
-pipewire-pulse &
+$ sudo xbps-install -S pulseaudio alsa-plugins-pulseaudio
+$ sudo ln -s /etc/sv/pulseaudio/ /var/service
 ```
